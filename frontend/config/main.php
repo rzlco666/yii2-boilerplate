@@ -1,10 +1,16 @@
 <?php
+
+use yii\log\FileTarget;
+use yii\web\Request;
+
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
     require __DIR__ . '/params.php',
     require __DIR__ . '/params-local.php'
 );
+
+$baseUrl = str_replace('/frontend/web', '', (new Request())->getBaseUrl());
 
 return [
     'id' => 'app-frontend',
@@ -14,6 +20,7 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
+            'baseUrl' => $baseUrl,
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -28,7 +35,7 @@ return [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
-                    'class' => \yii\log\FileTarget::class,
+                    'class' => FileTarget::class,
                     'levels' => ['error', 'warning'],
                 ],
             ],
@@ -36,14 +43,13 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
