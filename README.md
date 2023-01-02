@@ -1,60 +1,23 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
-    <br>
-</p>
+# Yii2 Boilerplate with Custom Template
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+This repository contains a boilerplate setup of Yii2 with a custom template built using Bootstrap 5. It is intended to serve as a quick starting point for building web applications with Yii2 and includes basic configuration and functionality such as user login and registration. The template is fully responsive and optimized for mobile devices.
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+## Technologies Used
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+- PHP: a popular general-purpose scripting language
+- Yii2: a high-performance PHP framework for web application development
+- MySQL: a popular open-source relational database management system
+- Bootstrap 5: a front-end framework for designing responsive, mobile-first websites
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+## Prerequisites
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
+To use this repository, you will need a local development environment set up with PHP and a web server such as Apache or Nginx. You will also need to install Yii2 and configure a database connection. Familiarity with Yii2 and basic web development concepts is recommended.
 
-DIRECTORY STRUCTURE
--------------------
+## How to use this repository
 
-```
-common
-    config/              contains shared configurations
-    mail/                contains view files for e-mails
-    models/              contains model classes used in both backend and frontend
-    tests/               contains tests for common classes    
-console
-    config/              contains console configurations
-    controllers/         contains console controllers (commands)
-    migrations/          contains database migrations
-    models/              contains console-specific model classes
-    runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-frontend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
-    controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for frontend application
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
-vendor/                  contains dependent 3rd-party packages
-environments/            contains environment-based overrides
-```
+1. Clone or download the repository to your local development environment.
+2. Follow the installation instructions provided in the `README` file to set up the application.
+3. Explore the various features and functionality of the template.
+4. Use the code as a reference or starting point for your own projects.
+
+We hope you find this repository useful as you work with Yii2 and Bootstrap!
